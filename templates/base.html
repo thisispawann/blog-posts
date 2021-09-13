@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="logo-back">THISISPAWANN</div>
+      <a href="" class="name_tag"> THISISPAWANN </a>
+      <div class="header">
+        <div class="header__title-wrap">
+          <div class="header__links">
+            <a href="" target="_blank" class="header__link"
+              ><i class="icons fab fa-youtube"></i
+            ></a>
+            <a href="#" class="icons fab fa-github"></a>
+            <a href="#codepenlink" target="_blank" class="header__link"
+              ><i class="icons fab fa-codepen"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <nav class="menu" data-scroll-section-inview="">
+        <h1 class="menu__item-h1">
+          Devoted to give helpful front-end assets for nothing
+        </h1>
+        <a href="" target="_blank" class="menu__item">
+          <span class="menu__item-text"
+            ><span
+              class="menu__item-textinner"
+              style="transform: translate(0px, 0px)"
+              ><span>Django Learning Path</span></span
+            ></span
+          >
+          <span class="menu__item-sub">CodePen</span>
+          <span class="menu__item-sub">Github</span>
+          <span class="menu__item-sub">YouTube</span>
+
+          <div
+            class="hover-reveal"
+            style="
+              opacity: 0;
+              filter: brightness(1);
+              transform: translate(129.158px, -44.04px);
+            "
+          >
+            <div
+              class="hover-reveal__inner"
+              style="transform: translate(-100%, 0px)"
+            >
+              <div
+                class="hover-reveal__img"
+                style="transform: translate(100%, 0px)"
+              ></div>
+            </div>
+          </div>
+        </a>
+        <h3 class="menu__item-h3">
+          © 2021 THISISPAWANN<br />Made with&nbsp;
+          <span class="heart" style="color: red">❤</span> &amp;&nbsp;<a
+            href="https://docs.djangoproject.com"
+            >Django</a
+          >
+        </h3>
+      </nav>
+    </main>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
