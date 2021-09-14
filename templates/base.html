@@ -5,9 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800;900&amp;display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap"
     />
     <link
       rel="stylesheet"
@@ -18,8 +19,26 @@
   </head>
   <body>
     <main>
-      <div class="logo-back">THISISPAWANN</div>
-      <a href="" class="name_tag"> THISISPAWANN </a>
+      <div class="logo-back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="646"
+          viewBox="0 0 88 646"
+          style="width: 65px"
+        >
+          <text
+            id="THISISPAWANN"
+            transform="translate(20) rotate(90)"
+            fill="#707070"
+            font-size="80"
+            font-family="Broadway"
+          >
+            <tspan x="0" y="0">THISISPAWANN</tspan>
+          </text>
+        </svg>
+      </div>
+      <a href="/" class="name_tag"> THISIS<b style="color: red">PAW</b>ANN </a>
+     
       <div class="header">
         <div class="header__title-wrap">
           <div class="header__links">
@@ -33,50 +52,15 @@
           </div>
         </div>
       </div>
-      <nav class="menu" data-scroll-section-inview="">
-        <h1 class="menu__item-h1">
-          Devoted to give helpful front-end assets for nothing
-        </h1>
-        <a href="" target="_blank" class="menu__item">
-          <span class="menu__item-text"
-            ><span
-              class="menu__item-textinner"
-              style="transform: translate(0px, 0px)"
-              ><span>Django Learning Path</span></span
-            ></span
-          >
-          <span class="menu__item-sub">CodePen</span>
-          <span class="menu__item-sub">Github</span>
-          <span class="menu__item-sub">YouTube</span>
-
-          <div
-            class="hover-reveal"
-            style="
-              opacity: 0;
-              filter: brightness(1);
-              transform: translate(129.158px, -44.04px);
-            "
-          >
-            <div
-              class="hover-reveal__inner"
-              style="transform: translate(-100%, 0px)"
-            >
-              <div
-                class="hover-reveal__img"
-                style="transform: translate(100%, 0px)"
-              ></div>
-            </div>
-          </div>
-        </a>
-        <h3 class="menu__item-h3">
-          © 2021 THISISPAWANN<br />Made with&nbsp;
-          <span class="heart" style="color: red">❤</span> &amp;&nbsp;<a
-            href="https://docs.djangoproject.com"
-            >Django</a
-          >
-        </h3>
-      </nav>
     </main>
+    {% block body %} {% endblock %}
+    <h3 class="menu__item-h3">
+      © {% now "Y" %} THISISPAWANN<br />Made with&nbsp;
+      <span class="heart" style="color: red">❤</span> &amp;&nbsp;<a
+        href="https://docs.djangoproject.com"
+        >Django</a
+      >
+    </h3>
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
   </body>
 </html>

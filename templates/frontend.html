@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% load static %} {% block body %}
-<a href="{% url 'frontend' %}" class="frontend">Front-End Assests</a>
+
 <nav class="menu" data-scroll-section-inview="">
   <h1 class="menu__item-h1">
     <marquee width="76%" direction="left" height="100px">
@@ -12,6 +12,9 @@
         ><span>Getting Started with Django</span></span
       ></span
     >
+    <span class="menu__item-sub">CodePen</span>
+    <span class="menu__item-sub">Github</span>
+    <span class="menu__item-sub">YouTube</span>
     <div
       class="hover-reveal"
       style="
@@ -29,5 +32,4 @@
     </div>
   </a>
 </nav>
-
-{% endblock%}
+ {% endblock %}
